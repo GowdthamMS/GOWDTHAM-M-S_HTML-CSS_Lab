@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            margin: 0%;
+            height: auto;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(202, 31, 31);
+            vertical-align: middle;
+        }
+
+        h1 {
+            padding: 10px;
+            margin: 0%;
+        }
+
+        .menu {
+            margin: 0%;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        .menu li a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div nav {
+            background-color: grey;
+            font-size: larger;
+        }
+
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .menu li:nth-child(2):hover #Dropdown_1,
+        .menu li:nth-child(3):hover #Dropdown_2 {
+            display: block;
+        }
+
+        .menu li:nth-child(2):active #Dropdown_1,
+        .menu li:nth-child(3):active #Dropdown_2 {
+            display: block;
+        }
+
+        #Dropdown_1 {
+            display: none;
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            top: 100px;
+            left: 122px;
+            background-color: whitesmoke;
+            padding: 0%;
+        }
+
+        #Dropdown_2 {
+            display: none;
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            top: 100px;
+            left: 220px;
+            background-color: whitesmoke;
+            padding: 0%;
+        }
+
+        #Dropdown_1 li,
+        #Dropdown_2 li {
+            display: block;
+        }
+
+        #Dropdown_1 li:hover,
+        #Dropdown_2 li:hover {
+            background-color: rgb(214, 236, 213);
+        }
+
+        #Dropdown_1 li a,
+        #Dropdown_2 li a {
+            color: steelblue;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+    <div>
+        <nav id="navigate">
+            <ul class="menu">
+                <li><a href="Mail Sign Up.html">Link 1</a></li>
+                <li><a href="#">Link 2</a>
+                    <ul id="Dropdown_1">
+                        <li><a href="Mail Sign Up.html">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link 3</a>
+                    <ul id="Dropdown_2">
+                        <li><a href="Mail Sign Up.html">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

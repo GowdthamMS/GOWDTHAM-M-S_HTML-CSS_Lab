@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        video {
+            position: fixed;
+        }
+
+        input {
+            background-color: white;
+            color: black;
+            width: 300px;
+            min-width: 100px;
+            height: 30px;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+            color: white;
+        }
+
+        div {
+            position: absolute;
+            border: 1px solid white;
+            padding: 10px;
+            top: 25%;
+            left: 40%;
+            border-radius: 5px;
+            min-width: 340px;
+            padding-left: 40px;
+        }
+
+        #div {
+            left: 37%;
+            padding: 20px;
+        }
+
+        #div p {
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            margin-left: 30px;
+            border-radius: 4px;
+            background-color: rgb(198, 110, 249);
+            border: none;
+            vertical-align: center;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <section id="block">
+        <div>
+            <form action="#">
+                <h1>Create Gmail Account</h1>
+                <input type="text" title="full name" placeholder="Full Name" required>
+                <br>
+                <input type="number" title="contact no" placeholder="Contact Number" min="6666666666" max="9999999999"
+                    required>
+                <br>
+                <input type="email" title="email" placeholder="Enter E-mail Id" required>
+                <br>
+                <button type="reset" value="Reset">Reset</button>
+                <button type="Submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

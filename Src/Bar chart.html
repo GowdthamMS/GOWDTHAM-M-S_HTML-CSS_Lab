@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <style>
+        .chart {
+            background-color: rgb(223, 222, 226);
+            position: absolute;
+            width: auto;
+            max-width: 250px;
+            top: 25%;
+            left: 40%;
+            padding: 20px;
+            margin: 0%;
+            border-radius: 10px;
+        }
+
+        .block {
+            background-color: grey;
+            width: 60px;
+            height: 360px;
+            margin: 10px;
+        }
+
+        .chart article {
+            display: inline-block;
+        }
+
+        h1 {
+            word-wrap: break-word;
+            text-align: center;
+            width: 90%;
+            margin: 0%;
+        }
+
+        p {
+            padding-left: 5px;
+            max-width: 70px;
+            text-align: center;
+            word-wrap: break-word;
+            font-size: 18px;
+        }
+
+        #bar1 {
+            background-color: white;
+            width: 100%;
+            height: 70%;
+            animation-name: bar_1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_1 {
+            0% {
+                height: 100%;
+            }
+
+            100% {
+                height: 70%;
+            }
+        }
+
+        #bar2 {
+            background-color: white;
+            width: 100%;
+            height: 60%;
+            animation-name: bar_2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_2 {
+            0% {
+                height: 100%;
+            }
+
+            100% {
+                height: 60%;
+            }
+        }
+
+        #bar3 {
+            background-color: white;
+            width: 100%;
+            height: 20%;
+            animation-name: bar_3;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_3 {
+            0% {
+                height: 100%;
+            }
+
+            100% {
+                height: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="chart">
+        <article>
+            <div class="block">
+                <article id="bar1"></article>
+            </div>
+            <p>30%</p>
+        </article>
+        <article>
+            <div class="block">
+                <article id="bar2"></article>
+            </div>
+            <p>40%</p>
+        </article>
+        <article>
+            <div class="block">
+                <article id="bar3"></article>
+            </div>
+            <p>80%</p>
+        </article>
+
+        <h1>Customer Satisfaction Bar Chart</h1>
+    </section>
+</body>
+
+</html>
